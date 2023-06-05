@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>index</title>
+</head>
+<body>
+  <h1>Registration</h1>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+      <option value="">Select</option>
+      <option value="state1">State 1</option>
+      <option value="state2">State 2</option>
+      <option value="state3">State 3</option>
+    </select><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = "rishab.html";
+    });
+  </script>
+</body>
+</html>
